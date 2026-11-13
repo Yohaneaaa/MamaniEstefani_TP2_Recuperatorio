@@ -6,11 +6,12 @@ public class PlayerInteraction : MonoBehaviour
     private LayerMask interactableMask;
     private IInteractable current;
     private GUIStyle promptStyle;
+    private string debugText = "";
 
     private void Start()
     {
         interactRange = 3f;
-        interactableMask = LayerMask.GetMask("Interactable");
+        interactableMask = LayerMask.GetMask("Interactable", "interactable");
 
         if (interactableMask == 0)
             Debug.LogWarning("PlayerInteraction: no existe la capa Interactable. Crearla y asignarla a la terminal.");
@@ -24,12 +25,16 @@ public class PlayerInteraction : MonoBehaviour
         Vector3 origin = transform.position - transform.forward * 0.6f;
         float range = interactRange + 0.6f;
 
+        string hitName = "nada";
         RaycastHit hit;
         if (interactableMask != 0 &&
             Physics.Raycast(origin, transform.forward, out hit, range, interactableMask, QueryTriggerInteraction.Ignore))
         {
+            hitName = hit.collider.name;
             current = hit.collider.GetComponentInParent<IInteractable>();
         }
+
+        debugText = "DEBUG mascara=" + interactableMask.value + " | rayo=" + hitName + " | interactuable=" + (current != null);
 
         Debug.DrawRay(origin, transform.forward * range, current != null ? Color.yellow : Color.gray);
 
@@ -39,6 +44,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private void OnGUI()
     {
+
         if (current == null || string.IsNullOrEmpty(current.Prompt)) return;
 
         if (promptStyle == null)
