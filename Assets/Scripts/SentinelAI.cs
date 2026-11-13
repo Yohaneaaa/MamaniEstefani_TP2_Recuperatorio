@@ -39,9 +39,9 @@ public class SentinelAI : MonoBehaviour
         patrolSpeed = 2f;
         waitAtPoint = 1.5f;
 
-        detectionRadius = 10f;
-        loseRadius = 14f;
-        fieldOfView = 120f;
+        detectionRadius = 20f;  
+        loseRadius = 28f;        
+        fieldOfView = 160f;
         eyeHeight = 1f;
         chaseSpeed = 6f;
         repathInterval = 0.2f;
