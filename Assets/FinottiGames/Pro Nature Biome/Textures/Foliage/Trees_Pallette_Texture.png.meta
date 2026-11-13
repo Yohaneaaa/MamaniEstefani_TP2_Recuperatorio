@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6879b5eda4abf6a40b5f3c2e3d5fa306
+guid: a16be952bfc308d46b4b1a5b05c7c23c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,12 +34,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
@@ -94,7 +94,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -107,7 +107,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -141,3 +141,10 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 374760
+  packageName: 'Pro Nature Biome: Starter Pack'
+  packageVersion: 1.1
+  assetPath: Assets/FinottiGames/Pro Nature Biome/Textures/Foliage/Trees_Pallette_Texture.png
+  uploadId: 936820

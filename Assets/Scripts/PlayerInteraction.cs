@@ -21,15 +21,17 @@ public class PlayerInteraction : MonoBehaviour
         current = null;
         if (Time.timeScale == 0f) return; 
 
-        Vector3 origin = transform.position;
+        Vector3 origin = transform.position - transform.forward * 0.6f;
+        float range = interactRange + 0.6f;
+
         RaycastHit hit;
         if (interactableMask != 0 &&
-            Physics.Raycast(origin, transform.forward, out hit, interactRange, interactableMask, QueryTriggerInteraction.Ignore))
+            Physics.Raycast(origin, transform.forward, out hit, range, interactableMask, QueryTriggerInteraction.Ignore))
         {
             current = hit.collider.GetComponentInParent<IInteractable>();
         }
 
-        Debug.DrawRay(origin, transform.forward * interactRange, current != null ? Color.yellow : Color.gray);
+        Debug.DrawRay(origin, transform.forward * range, current != null ? Color.yellow : Color.gray);
 
         if (current != null && Input.GetKeyDown(KeyCode.E))
             current.Interact();
