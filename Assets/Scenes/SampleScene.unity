@@ -681,6 +681,7 @@ GameObject:
   - component: {fileID: 1806965000}
   - component: {fileID: 1806964999}
   - component: {fileID: 1806964998}
+  - component: {fileID: 1806965001}
   m_Layer: 8
   m_Name: Terrain
   m_TagString: Untagged
@@ -764,6 +765,95 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1806965001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806964997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshSurface
+  m_SerializedVersion: 0
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 7c055b2fb3c5d0c4a8248dca1f2e764e, type: 2}
+  m_BuildHeightMesh: 0
+--- !u!1001 &3978715650350762016
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1104226664644369821, guid: 375d1395fcb834e4890327aabf13b2f3, type: 3}
+      propertyPath: m_Name
+      value: Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268646738481652023, guid: 375d1395fcb834e4890327aabf13b2f3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 944.2471
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268646738481652023, guid: 375d1395fcb834e4890327aabf13b2f3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.89756
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268646738481652023, guid: 375d1395fcb834e4890327aabf13b2f3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 698.40234
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268646738481652023, guid: 375d1395fcb834e4890327aabf13b2f3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268646738481652023, guid: 375d1395fcb834e4890327aabf13b2f3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268646738481652023, guid: 375d1395fcb834e4890327aabf13b2f3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268646738481652023, guid: 375d1395fcb834e4890327aabf13b2f3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268646738481652023, guid: 375d1395fcb834e4890327aabf13b2f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268646738481652023, guid: 375d1395fcb834e4890327aabf13b2f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268646738481652023, guid: 375d1395fcb834e4890327aabf13b2f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 375d1395fcb834e4890327aabf13b2f3, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -774,3 +864,4 @@ SceneRoots:
   - {fileID: 1806965000}
   - {fileID: 69976113}
   - {fileID: 1541246567}
+  - {fileID: 3978715650350762016}

@@ -33,9 +33,9 @@ public class PlayerMovement : MonoBehaviour
         if (Camera.main != null)
             cameraTransform = Camera.main.transform;
 
-        velocity = 5f;
-        acceleration = 30f;
-        jumpForce = 6f;
+        velocity = 8f;
+        acceleration = 40f;
+        jumpForce = 7f;
         groundCheckDistance = 0.2f;  
         turnSpeed = 720f;            
 
